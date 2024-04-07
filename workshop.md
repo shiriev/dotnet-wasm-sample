@@ -26,6 +26,7 @@
 
 4. Добавлем файл main.js в корень проекта. Пустой. Нужен для нормальной работы тулсета, думаю в будущем починят и необходимость в нем отпадет.
 5. Выполняем dotnet publish -c Release
+6. Добавляем frontend через create-react-app
 
 TODO: Выяснить для чего нужен RuntimeIdentifier
 TODO: Выяснить для чего нужен AllowUnsafeBlock

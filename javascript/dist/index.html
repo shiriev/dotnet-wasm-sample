@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Getting Started</title>
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <!--<script type="module" src="./AppBundle/_framework/dotnet.js" id="wasmsample"></script>-->
+    <script type="module">
+      import * as module  from './AppBundle/_framework/dotnet.js'
+      window.dotnet = module
+    </script>
   </head>
   <body>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
+    <div id = 'out'></div>
   </body>
 </html>

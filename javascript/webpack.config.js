@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -18,5 +19,14 @@ module.exports = {
     },
     allowedHosts: 'all',
   },
+  externals : {
+    'dotnet': 'dotnet',
+  },
+  //plugins: [
+  //  new webpack.IgnorePlugin({
+  //   resourceRegExp: /.*dotnet.*/,
+  //   //contextRegExp: /.*wasm.*/,
+  // })
+  //],
   mode: 'development',
 };

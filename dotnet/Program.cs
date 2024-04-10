@@ -1,5 +1,6 @@
 ﻿﻿using System.Runtime.InteropServices.JavaScript;
 
+Console.WriteLine("frr");
 // Creates "Main" to please the toolset
 return;
 

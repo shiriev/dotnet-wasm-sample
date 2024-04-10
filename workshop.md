@@ -38,3 +38,5 @@ TODO: Почитать про
 <WasmEmitSymbolMap>false</WasmEmitSymbolMap>
 <!-- end of size optimization -->
 ```
+
+dotnet publish -c Release ../dotnet && rm -r ./dist/AppBundle/ && cp -r ../dotnet/bin/Release/net8.0/browser-wasm/AppBundle ./dist/AppBundle && npm start

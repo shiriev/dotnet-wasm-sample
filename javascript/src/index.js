@@ -34,7 +34,14 @@ async function main()
   console.log(text);
 
   document.getElementById("out").innerHTML = text;
-  await dotnet.run();
+  const codeArea = document.getElementById("codeArea");
+  const runButton = document.getElementById("runButton");
+  runButton.addEventListener("click", () => {
+    const code = codeArea.value;
+    exports.DotnetFiddle.RunCode(code);
+  });
+  // await dotnet.run();
+  
 }
 
 main();
